@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Logística em Foco — Grupo Cargo Polo</title>
+<style>
+*{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#eef3f7;color:#16232d}
+.banner{max-width:1500px;margin:24px auto;background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 18px 50px rgba(0,0,0,.15)}
+.hero{padding:42px 52px;background:linear-gradient(135deg,#102a43,#1f5f7a);color:white;position:relative}
+.hero:after{content:"LOGÍSTICA";position:absolute;right:35px;bottom:-10px;font-size:90px;font-weight:900;opacity:.07}
+.kicker{font-size:14px;letter-spacing:2px;text-transform:uppercase;opacity:.8}
+h1{font-size:46px;margin:8px 0 5px}.subtitle{font-size:22px;margin:0 0 24px;max-width:900px}
+.badges{display:flex;gap:10px;flex-wrap:wrap}.badge{padding:8px 13px;border:1px solid rgba(255,255,255,.3);border-radius:30px;background:rgba(255,255,255,.1);font-size:13px}
+nav{display:flex;gap:8px;flex-wrap:wrap;padding:14px 22px;background:#f7fafc;border-bottom:1px solid #dce5eb;position:sticky;top:0;z-index:5}
+nav button{border:0;background:#e7eef3;color:#173447;padding:11px 16px;border-radius:10px;cursor:pointer;font-weight:700} nav button:hover,nav button.active{background:#1f6f8b;color:#fff}
+main{padding:30px 42px}.panel{display:none}.panel.active{display:block}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#f8fafb;border:1px solid #dce6ec;border-radius:16px;padding:20px;transition:.2s}.card:hover{transform:translateY(-3px);box-shadow:0 8px 22px rgba(0,0,0,.08)}
+.card h3{margin:0 0 10px;color:#15566f}.big{font-size:31px;font-weight:800;color:#174c64}.muted{color:#647581;line-height:1.55}
+.flow{display:flex;gap:0;flex-wrap:wrap;margin:20px 0}.step{flex:1;min-width:130px;text-align:center;padding:16px 10px;background:#eaf3f6;border-right:2px solid white;font-weight:700}.step:first-child{border-radius:12px 0 0 12px}.step:last-child{border-radius:0 12px 12px 0}
+.tabs{display:flex;gap:8px;margin-bottom:16px}.tabs button{padding:10px 15px;border:1px solid #ccdbe2;border-radius:9px;background:white;cursor:pointer}.tabs button.sel{background:#173f56;color:white}
+.tabcontent{display:none}.tabcontent.sel{display:block}
+.footer{padding:24px 42px;background:#102a43;color:#dbe8ee;font-size:13px}.footer strong{color:white}
+@media(max-width:900px){.grid{grid-template-columns:1fr 1fr}h1{font-size:34px}.hero{padding:30px}.subtitle{font-size:18px}main{padding:24px}}
+@media(max-width:600px){.grid{grid-template-columns:1fr}.flow{display:block}.step{border-right:0;border-bottom:2px solid white}.step:first-child{border-radius:12px 12px 0 0}.step:last-child{border-radius:0 0 12px 12px}}
+</style>
+</head>
+<body>
+<div class="banner">
+<section class="hero">
+<div class="kicker">Projeto Integrador IV • Tecnologia em Logística • 2026</div>
+<h1>LOGÍSTICA EM FOCO</h1>
+<p class="subtitle"><strong>Grupo Cargo Polo:</strong> gestão, tecnologia, qualidade e ESG nas operações logísticas</p>
+<div class="badges"><span class="badge">Transporte rodoviário</span><span class="badge">Gestão de frota</span><span class="badge">Tecnologia</span><span class="badge">Segurança</span><span class="badge">Sustentabilidade</span></div>
+</section>
+
+<nav>
+<button class="active" onclick="show('empresa',this)">Empresa</button>
+<button onclick="show('operacoes',this)">Operações</button>
+<button onclick="show('tecnologia',this)">Tecnologia</button>
+<button onclick="show('qualidade',this)">Qualidade & Segurança</button>
+<button onclick="show('esg',this)">ESG</button>
+<button onclick="show('conclusao',this)">Conclusão</button>
+</nav>
+
+<main>
+<section id="empresa" class="panel active">
+<h2>Grupo Cargo Polo</h2>
+<p class="muted">Empresa brasileira fundada em 2010, inicialmente ligada ao segmento de bebidas e posteriormente expandida para diferentes segmentos e serviços logísticos.</p>
+<div class="grid">
+<div class="card"><div class="big">2010</div><h3>Fundação</h3><p class="muted">Início das atividades do Grupo Cargo Polo.</p></div>
+<div class="card"><div class="big">+2.000</div><h3>Colaboradores</h3><p class="muted">Número de colaboradores diretos e indiretos informado no trabalho.</p></div>
+<div class="card"><div class="big">2,8 anos</div><h3>Idade média da frota</h3><p class="muted">Média aproximada informada nas informações institucionais analisadas.</p></div>
+</div>
+<h3>Presença mencionada no estudo</h3>
+<p class="muted">São Paulo, Ribeirão Preto, Itu, Caçapava, Brasília, Goiânia, Anápolis, Alexânia, Salvador, Recife, Benevides, Pacatuba e Caxias.</p>
+</section>
+
+<section id="operacoes" class="panel">
+<h2>Principais processos logísticos</h2>
+<p class="muted">O estudo representa as operações de forma simplificada pelo seguinte fluxo:</p>
+<div class="flow">
+<div class="step">Planejamento</div><div class="step">Coleta</div><div class="step">Transporte</div><div class="step">Monitoramento</div><div class="step">Entrega</div><div class="step">Controle & melhoria</div>
+</div>
+<div class="grid">
+<div class="card"><h3>Serviços</h3><p class="muted">Transporte rodoviário, armazenagem, distribuição urbana e transferência de produtos.</p></div>
+<div class="card"><h3>Operações</h3><p class="muted">O trabalho menciona atividades de inbound, outbound e operações dedicadas.</p></div>
+<div class="card"><h3>Gestão</h3><p class="muted">Planejamento de recursos, acompanhamento dos veículos e comunicação entre os envolvidos.</p></div>
+</div>
+</section>
+
+<section id="tecnologia" class="panel">
+<h2>Gestão de frota & tecnologia</h2>
+<div class="grid">
+<div class="card"><h3>🛰 Monitoramento via satélite</h3><p class="muted">Acompanha localização, deslocamento e informações relacionadas às viagens, ampliando a visibilidade da operação.</p></div>
+<div class="card"><h3>🛡 Gerenciamento de riscos</h3><p class="muted">A tecnologia de monitoramento contribui para o acompanhamento da operação e dos riscos.</p></div>
+<div class="card"><h3>😴 Sensor de fadiga</h3><p class="muted">Recurso voltado à segurança operacional e à identificação de situações associadas ao cansaço durante a condução.</p></div>
+<div class="card"><h3>🔧 Manutenção</h3><p class="muted">A empresa informa realizar manutenção periódica dos veículos.</p></div>
+<div class="card"><h3>⚠️ Atenção metodológica</h3><p class="muted">O trabalho não encontrou informações públicas suficientes para afirmar que a empresa utilize especificamente WMS, TMS, ERP, RFID ou inteligência artificial.</p></div>
+</div>
+</section>
+
+<section id="qualidade" class="panel">
+<h2>Qualidade, segurança e certificações</h2>
+<div class="grid">
+<div class="card"><h3>Política Integrada</h3><p class="muted">Envolve qualidade, segurança, saúde e meio ambiente.</p></div>
+<div class="card"><h3>ISO 9001:2015</h3><p class="muted">Associada à gestão da qualidade e à melhoria contínua dos processos.</p></div>
+<div class="card"><h3>SASSMAQ</h3><p class="muted">Relaciona-se à avaliação de segurança, saúde, meio ambiente e qualidade no setor de transporte.</p></div>
+</div>
+<p class="muted" style="margin-top:18px">Essas práticas são apresentadas no estudo como relevantes para controle dos processos, atendimento a requisitos e redução de riscos operacionais.</p>
+</section>
+
+<section id="esg" class="panel">
+<h2>ESG — Ambiental, Social e Governança</h2>
+<div class="tabs">
+<button class="sel" onclick="tab('a',this)">Ambiental</button><button onclick="tab('s',this)">Social</button><button onclick="tab('g',this)">Governança</button>
+</div>
+<div id="a" class="tabcontent sel card"><h3>🌱 Ambiental</h3><p class="muted">O trabalho cita iniciativas de neutralização de emissões de CO₂ por meio do plantio de árvores e preocupação com preservação ambiental e melhoria contínua.</p></div>
+<div id="s" class="tabcontent card"><h3>👥 Social</h3><p class="muted">São divulgadas ações de treinamento e desenvolvimento, segurança dos motoristas, inclusão e diversidade. O estudo também menciona a participação no programa Na Mão Certa.</p></div>
+<div id="g" class="tabcontent card"><h3>⚖ Governança</h3><p class="muted">Destacam-se princípios como ética, transparência, respeito e cumprimento de requisitos legais, além de processos de qualidade, segurança, auditoria e controle.</p></div>
+</section>
+
+<section id="conclusao" class="panel">
+<h2>Conclusão do estudo</h2>
+<div class="card">
+<p class="muted">A análise demonstra a integração entre <strong>gestão, tecnologia, qualidade, segurança e sustentabilidade</strong> nas operações logísticas do Grupo Cargo Polo. O trabalho relaciona a prática empresarial aos conhecimentos do curso de Tecnologia em Logística, mostrando que a logística envolve planejamento, informação, pessoas, tecnologia, segurança, qualidade e sustentabilidade.</p>
+</div>
+<div class="grid" style="margin-top:18px">
+<div class="card"><h3>Planejamento</h3><p class="muted">Controle dos recursos e das operações.</p></div>
+<div class="card"><h3>Tecnologia</h3><p class="muted">Visibilidade e acompanhamento da operação.</p></div>
+<div class="card"><h3>Pessoas & ambiente</h3><p class="muted">Segurança, desenvolvimento e responsabilidade socioambiental.</p></div>
+</div>
+</section>
+</main>
+
+<footer class="footer">
+<strong>Projeto Integrador IV — Otávio Gabriel Pereira de Sá</strong><br>
+Faculdade de Tecnologia de Botucatu • Curso Superior de Tecnologia em Logística • Prof.ª Dr.ª Fernanda Cristina Pierre Di Nardo • Outubro/2026
+</footer>
+</div>
+<script>
+function show(id,btn){
+ document.querySelectorAll('.panel').forEach(x=>x.classList.remove('active'));
+ document.getElementById(id).classList.add('active');
+ document.querySelectorAll('nav button').forEach(x=>x.classList.remove('active'));
+ btn.classList.add('active');
+ window.scrollTo({top:0,behavior:'smooth'});
+}
+function tab(id,btn){
+ document.querySelectorAll('.tabcontent').forEach(x=>x.classList.remove('sel'));
+ document.getElementById(id).classList.add('sel');
+ document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('sel'));
+ btn.classList.add('sel');
+}
+</script>
+</body>
+</html>
